@@ -1,9 +1,9 @@
-import { waitFor } from '@testing-library/dom'
 import { render, screen } from '@testing-library/react'
-import userEvent from '@testing-library/user-event'
-import React from 'react'
-import { act } from 'react-dom/test-utils'
+
 import App from './App'
+import { act } from 'react-dom/test-utils'
+import userEvent from '@testing-library/user-event'
+import { waitFor } from '@testing-library/dom'
 
 test('Show App Component', () => {
     render(<App />)

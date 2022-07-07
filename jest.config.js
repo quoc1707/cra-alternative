@@ -1,4 +1,4 @@
-const config = {
+module.exports = {
     roots: ['<rootDir>'],
     verbose: true,
     notify: true,
@@ -34,5 +34,3 @@ const config = {
         '!src/**/*.d.ts',
     ],
 }
-
-module.exports = config

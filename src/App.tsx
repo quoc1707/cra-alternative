@@ -1,6 +1,8 @@
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
 import './App.scss'
+
+import { useEffect, useState } from 'react'
+
+import axios from 'axios'
 import logo from './logo.svg'
 
 type Docs = { name: string; url: string }
@@ -25,8 +27,7 @@ const App = () => {
                 className='flex flex-col min-h-screen bg-[#282c34] text-white items-center justify-center'
                 style={{
                     fontSize: 'calc(10px + 2vmin)',
-                }}
-            >
+                }}>
                 <img
                     className='h-[40vmin] App-logo pointer-events-none'
                     src={logo}
@@ -39,8 +40,7 @@ const App = () => {
                         style={{
                             fontSize: 'calc(10px + 2vmin)',
                         }}
-                        onClick={() => setCount(count + 1)}
-                    >
+                        onClick={() => setCount(count + 1)}>
                         count is: {count}
                     </button>
                 </p>
@@ -53,8 +53,7 @@ const App = () => {
                         className='text-[#61dafb]'
                         href='https://reactjs.org'
                         target='_blank'
-                        rel='noopener noreferrer'
-                    >
+                        rel='noopener noreferrer'>
                         Learn React
                     </a>
                     {' | '}
@@ -62,8 +61,7 @@ const App = () => {
                         className='text-[#61dafb]'
                         href='https://vitejs.dev/guide/features.html'
                         target='_blank'
-                        rel='noopener noreferrer'
-                    >
+                        rel='noopener noreferrer'>
                         Vite Docs
                     </a>
                     {docsList.length
@@ -75,8 +73,7 @@ const App = () => {
                                           className='text-[#61dafb]'
                                           href={v.url}
                                           target='_blank'
-                                          rel='noopener noreferrer'
-                                      >
+                                          rel='noopener noreferrer'>
                                           {v.name}
                                       </a>
                                   </span>
